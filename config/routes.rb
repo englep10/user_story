@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  root 'apis#this_for_that'
+   get '/this_for_that' => 'apis#this_for_that'
+   get '/itunes' => 'apis#itunes'
+   get '/giphy' => 'apis#giphy'
+  resources :users
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
